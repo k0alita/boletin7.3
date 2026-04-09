@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Alejandro Hernández",
+    "dni": "12345678A",
+    "telefono": "600111222",
+    "fecha": "15/06/2000"
+  },
+  {
+    "nombre": "María García",
+    "dni": "87654321B",
+    "telefono": "600333444",
+    "fecha": "15/07/2040"
+  },
+  {
+    "nombre": "Carlos López",
+    "dni": "11223344C",
+    "telefono": "600555666",
+    "fecha": "23/05/2020"
+  },
+  {
+    "nombre": "Laura Martínez",
+    "dni": "44332211D",
+    "telefono": "600777888",
+    "fecha": "03/03/1940"
+  },
+  {
+    "nombre": "Javier Sánchez",
+    "dni": "55667788E",
+    "telefono": "600999000",
+    "fecha": "04/12/2956"
+  }
+]
