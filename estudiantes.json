@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Alejandro",
+    "curso": "DAM",
+    "media": 2.4
+  },
+  {
+    "nombre": "Javier",
+    "curso": "DAM",
+    "media": 5.3
+  },
+  {
+    "nombre": "Moises",
+    "curso": "SMR",
+    "media": 6.7
+  }
+]

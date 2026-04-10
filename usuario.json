@@ -1,0 +1,9 @@
+{
+  "username": "koalitaa",
+  "email": "koalita@gmail.com",
+  "direccion": {
+    "calle": "pepino",
+    "ciudad": "Pepo",
+    "codigoPostal": 12401
+  }
+}
