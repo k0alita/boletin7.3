@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Matricula2 {
+public class Matricula3 {
     public static void main(String[] args) {
         Path ruta = Path.of("src\\main\\java\\RepasoExamen\\matriculas.txt");
 
@@ -25,14 +25,14 @@ public class Matricula2 {
         Pattern pattern = Pattern.compile("^(\\p{L}+)\\s+(?<numeros>\\d{4})-(?<letras>[B-Z&&[^EIOU]]{3})$");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         try (Stream<String> lineas = Files.lines(ruta)) {
-            List<MatriculaR> resultado = lineas.map(pattern::matcher)
-                    .filter(Matcher::find)
-                    .map(m -> {
-                        String numeros = m.group("numeros");
-                        String letras = m.group("letras");
-
-                        return new MatriculaR(numeros, letras);
-                    }).toList();
+            List<MatriculaR> resultado = lineas
+                    .map(pattern::matcher)
+                    .filter(m -> m.matches())
+                    .map(m -> new MatriculaR(
+                            m.group("numeros"),
+                            m.group("letras")
+                    ))
+                    .collect(Collectors.toList());
 
             try (FileWriter writer = new FileWriter("matriculas-detalle.json")) {
                 gson.toJson(resultado, writer);
