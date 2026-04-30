@@ -1,0 +1,6 @@
+Fichero analizado : hola.txt
+Palabra buscada   : rosa
+Total palabras    : 36
+Apariciones       : 1
+────────────────────────────────────────
+Línea   8: Rosa De Santos 7
